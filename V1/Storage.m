@@ -15,7 +15,7 @@
 @synthesize price;
 
 - (NSString *)description {
-    return [NSString stringWithFormat: @"%@        %@", name, price];
+    return [NSString stringWithFormat: @"%@ %d", name, price];
 }
 
 @end
