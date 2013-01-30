@@ -13,7 +13,13 @@
 @synthesize orders;
 @synthesize order;
 
-
+- (id)init {
+    self = [super init];
+    if (self) {
+        orders = [[NSMutableArray alloc] init];
+    }
+    return self;
+}
 
 -(void) addOrders:(Storage *)oneOrder{
     
