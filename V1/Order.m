@@ -51,7 +51,7 @@
     
     Storage *order = [[Storage alloc] init];
     [order setName:name];
-    [order setPrice:&price];
+    [order setPrice:price];
     [orders addOrders:order];
     for (Storage *obj in orders.getOrders){
         [check setText:[NSString stringWithFormat:@"%@",[obj description]]];
